@@ -9,6 +9,6 @@ fi
 if [ "$1" = "php" ]; then
 install
 cd ..
-cd bot
+cd bgchecker
 php run.php
 fi
